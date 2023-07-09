@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/756dc39561.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/lOGO-4.png" class="lOGO">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul> 
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+      </nav>
+      <div class="header-text">
+        <p>Shopify Expert</p>
+        <h1>Hi, I'm <span>Jason</span><br>Reifer From America</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png">
+        </div>
+        <div class="about-col-2">
+          <h2 class="sub-title">About Me</h2>
+          <p>Hi, I'm Jason Reifer, a certified Shopify expert and a digital marketer with 5 years of experience in e-commerce. I specialize in creating stunning and profitable Shopify stores that drive traffic and conversions.  
+          I'm also a top-rated freelancer on Fiverr, where I have delivered high-quality work for hundreds of happy clients. Whether you need a new Shopify store from scratch, a redesign of your existing store, or a proven marketing strategy to boost your sales, I'm your go-to Shopify partner. Contact me today and let's grow your online business together!</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div id="skills" class="tab-contents active-tab">
+            <ul>
+              <li><span>Shopify Themes Design</span><br>Shopify Store Setup and Configuration.
+              <p>Theme Customization and Development.</p>
+              <p>~Strong knowledge of HTML, CSS, and JavaScript for front-end development.</p>
+
+</li>
+              <li><span>Web Development</span><br>SEO Optimization for Shopify Stores
+                <p>Conversion Rate Optimization (CRO)</p>
+                <p>Liquid Templating Language</p>
+
+</li>
+              <li><span>App Development</span><br>Shopify App Integration
+                <p>Payment Gateway Setup
+</p>
+</li>
+            </ul>
+          </div>
+
+          <div id="experience" class="tab-contents">
+            <ul>
+              <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+              <li><span>2019 - 2021</span><br>Team Lead at Startup LLC.</li>
+              <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li>
+              <li><span>2016 - 2017</span><br>Internship at ekart ecommerce</li>
+            </ul>
+          </div>
+
+          <div id="education" class="tab-contents">
+            <ul>
+              <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+              <li><span>2016</span><br>MBA from MIT Bangalore</li>
+              <li><span>2014</span><br>BBA from ISM Bangalore</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------services ------>
+  <div id="Services"> 
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Store Setup</h2>
+          <p>I offer end-to-end Shopify store setup and customization services, handling everything from settings configuration to seamless payment gateways. With a focus on creating unique and branded stores, I specialize in customizing Shopify themes for visually appealing designs. I ensure smooth navigation and browsing by organizing product listings, collections, and categories. Additionally, I optimize the user experience with intuitive menus, tags, and filters for easy customer exploration.</p>
+          <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop-simple"></i>
+          <h2>App Integration </h2>
+          <p>I offer expert app integration and development services for Shopify stores. I recommend and integrate relevant Shopify apps to enhance store functionality. Additionally, I develop custom Shopify apps tailored to meet unique business needs. I also provide seamless integration with third-party systems, such as CRM and inventory management, for a streamlined and efficient operation.</p>
+          <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store"></i>
+          <h2>SEO and Others</h2>
+          <p>I offer comprehensive SEO optimization services for Shopify stores, improving organic visibility through keyword research, meta tags, and structured data implementation. Additionally, I optimize store performance by analyzing and enhancing loading times with caching, image optimization, and code optimizations. Furthermore, I provide training, support, and ongoing maintenance services to ensure clients can efficiently manage their Shopify stores.</p>
+          <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- Portfolio Section -->
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/work-1.png">
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>Hi, I'm {{ shop.owner }}, a certified Shopify expert and a digital marketer with 5 years of experience in</p>
+          <a href="#"><i class="fas fa-link"></i></a> <!-- Corrected Font Awesome icon class -->
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-2.png">
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>Hi, I'm {{ shop.owner }}, a certified Shopify expert and a digital marketer with 5 years of experience in</p>
+          <a href="#"><i class="fas fa-link"></i></a> <!-- Corrected Font Awesome icon class -->
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/work-3.png">
+        <div class="layer">
+          <h3>Social Media App</h3>
+          <p>Hi, I'm {{ shop.owner }}, a certified Shopify expert and a digital marketer with 5 years of experience in</p>
+          <a href="#"><i class="fas fa-link"></i></a> <!-- Corrected Font Awesome icon class -->
+        </div>
+      </div>
+    </div>
+    <a href="#" class="abc">See more</a>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div id="contact">
+<div class="container">
+  <div class="row">
+    <div class="contact-left"> 
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-sharp fa-solid fa-paper-plane-top"></i>Jasonreiferlbs@gmail.com</p>
+      <p><i class="fa-solid fa-phone fa-beat"></i>0145853526</p>
+      <div class="social-icons">
+         <a href=""><i class="fa-brands fa-facebook"></i></a>
+         <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+         <a href=""><i class="fa-brands fa-instagram"></i></a>
+         <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <a href="images/my-cv.pdf" class="abc abc2">Download CV</a>
+    </div>
+
+    <div class="contact-right">
+      <form>
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="text" email="Email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="abc abc2">Submit</button>
+      </form>
+    </div>
+  </div>
+  <div class="copyright">
+   <p>Copyright Jason. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+    
+  </div>
+</div>
+
+<script>
+
+
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+      for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active-link");
+      }
+
+      for (var i = 0; i < tabcontents.length; i++) {
+        tabcontents[i].classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu")
+ 
+function openmenu() {
+  sidemenu.style.right = "0";
+}
+function closemenu() {
+  sidemenu.style.right = "-200px";
+}
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
